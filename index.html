@@ -15,12 +15,14 @@
     <div style="background: black">
 
         <nav>
-            <a href="https://university.innopolis.ru/"><img src="images/logo.png" alt="Иннополис"></a>
-            <a href="#">ЗАКАЗАТЬ БИЛЕТ</a>
-            <a href="#">ПРЕИМУЩЕСТВА</a>
-            <a href="#">ФИЛЬМЫ</a>
-            <a href="#">КОНТАКТЫ</a>
-            <span style="color:darkblue ">Ваш город: <u>Москва</u></span>
+            <ul>
+                <li><a href="https://university.innopolis.ru/"><img src="images/logo.png" alt="Иннополис"></a></li>
+                <li><a href="#">ЗАКАЗАТЬ БИЛЕТ</a></li>
+                <li><a href="#">ПРЕИМУЩЕСТВА</a></li>
+                <li><a href="#">ФИЛЬМЫ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+                <li><span style="color:darkblue ">Ваш город: <u>Москва</u></span></li>
+            </ul>
         </nav>
     </div>
     <div>
@@ -32,7 +34,7 @@
     </div>
 
     <div>
-        <h3>Добро пожаловать!</h3>
+        <h2>Добро пожаловать!</h2>
         <p>
             Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis quibusdam
             quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.
@@ -46,7 +48,7 @@
     <div>
         <div>
             <img src="images/b2_icon_1.jpg" alt="Большие экраны">
-            <h2>Большие экраны</h2>
+            <h4>Большие экраны</h4>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error
                 expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis
@@ -56,14 +58,14 @@
 
         <div>
             <img src="images/b2_icon_2.jpg" alt="Объёмный звук">
-            <h2>Объемный звук</h2>
+            <h4>Объемный звук</h4>
             <p>
                 Lorem ipsum dolor sit amet.
             </p>
         </div>
         <div>
             <img src="images/b2_icon_3.jpg" alt="Удобные кресла">
-            <h2>Удобные кресла</h2>
+            <h4>Удобные кресла</h4>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error
                 expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis
@@ -72,48 +74,47 @@
         </div>
     </div>
 
-    <div class="movie-list">
-        <table>
-            <caption>
-                <h2 class="movie-list__header">Выберите фильм</h2>
-            </caption>
-            <tr>
-                <th> Начало сеанса </th>
-                <th>Название фильма</th>
-                <th> Жанр</th>
-            </tr>
-            <tr>
-                <th>10:00</th>
-                <th><a title="kinopoisk.ru: Человек-паук" href="https://www.kinopoisk.ru/film/838/"
-                        target="_blank">Человек-паук</a></th>
-                <th>фантастика, боевик, приключения</th>
-            </tr>
-            <tr>
-                <th>12:00</th>
-                <th><a title="kinopoisk.ru: Собачья жизнь 2" href="https://www.kinopoisk.ru/film/1122114/"
-                target="_blank">Собачья жизнь 2</a></th>
-                <th>фэнтези, драма, комедия</th>
-            </tr>
-            <tr>
-                <th>14:00</th>
-                <th><a title="kinopoisk.ru: История игрушек 4" href="https://www.kinopoisk.ru/film/846824/"
-                target="_blank">История
-                игрушек 4</a></th>
-                <th>мультфильм, фэнтези, комедия</th>
-            </tr>
-            <tr>
-                <th>16:00</th>
-                <th><a title="kinopoisk.ru: Люди в черном: Интернэшнл" href="https://www.kinopoisk.ru/film/693730/"
-                target="_blank">Люди
-                в черном: Интернэшнл</a></th> 
-                <th>фантастика, боевик, комедия</th>
-            </tr>
+    <div>
+        <h2>Выберите фильм</h2>
+        <div>
+            <table border="2" ; cellpadding="2" ; cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Начало сеанса</th>
+                        <th>Название фильма</th>
+                        <th>Жанр</th>
+                    </tr>
+                </thead>
+                <tfoot></tfoot>
+                <tbody>
+                    <tr>
+                        <td>10:00</td>
+                        <td>Человек-паук</td>
+                        <td>фантастика, боевик, приключения</td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td>Собачья жизнь 2 </td>
+                        <td>фэнтези, драма, комедия</td>
+                    </tr>
+                    <tr>
+                        <td>14:00</td>
+                        <td>История игрушек 4</td>
+                        <td>мультфильм, фэнтези, комедия </td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>Люди в черном: Интернэшнл </td>
+                        <td>фантастика, боевик, комедия </td>
+                    </tr>
 
-        </table>
+                </tbody>
+            </table>
+        </div>
     </div>
     <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus
-            veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui
-            quibusdam sunt!</div>
+        veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui
+        quibusdam sunt!</div>
 
     <div>
         <img src="images/b4_img.jpg" alt="Подарок каждому!">
@@ -144,7 +145,7 @@
     </div>
 
     <div>
-        <h3>Фильмы</h3>
+        <h4>Фильмы</h4>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci
             alias, animi, commodi eius ipsum, laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse
@@ -156,7 +157,7 @@
                     <img src="images/mov1.jpg" alt="Человек-паук">
                 </div>
                 <div>
-                    <div>Человек-паук</div>
+                    <h5>Человек-паук</h5>
                     <hr />
                     <div>Lorem ipsum dolor sit amet, consectetur</div>
                     <div>
@@ -178,7 +179,7 @@
                     <img src="images/mov2.jpg" alt="Собачья жизнь 2">
                 </div>
                 <div>
-                    <div>Собачья жизнь 2</div>
+                    <h5>Собачья жизнь 2</h5>
                     <hr />
                     <div>Lorem ipsum dolor sit amet, consectetur</div>
                     <div>
@@ -200,7 +201,7 @@
                     <img src="images/mov3.jpg" alt="Люди в черном: Интернэшнл">
                 </div>
                 <div>
-                    <div>Люди в черном: Интернэшнл</div>
+                    <h5>Люди в черном: Интернэшнл</h5>
                     <hr />
                     <div>Lorem ipsum dolor sit amet, consectetur</div>
                     <div>
@@ -240,38 +241,48 @@
             </a>
         </div>
     </footer>
-    <form style="width: 300px">
+    <form style="width: 300px" action="order.php">
         <div>
-            <input type="text" name="client_name" placeholder="Имя*" />
+            <label for="client's name">Имя</label>
+            <input type="text" name="client_name" id="client's name" placeholder="Имя*" required />
         </div>
         <div>
-            <select>
-                <option>Выбор1</option>
-                <option>Выбор2</option>
-                <option>Выбор3</option>
+            <label for="val">Выбор</label>
+            <select id="val">
+                <option value="1">Выбор места 1</option>
+                <option value="2">Выбор места 2</option>
+                <option value="3">Выбор места 3</option>
+                <option value="4">Выбор места 4</option>
+                <option value="5">Выбор места 5</option>
+                <option value="6">Выбор места 6</option>
+                <option value="7">Выбор места 7</option>
+                <option value="8">Выбор места 8</option>
+                <option value="9">Выбор места 9</option>
+                <option value="10">Выбор места 10</option>
             </select>
         </div>
         <div>
             <input id="first" type="radio" name="1" />
             <label for="first">Выбор1</label>
             <br>
-            <input id="second" type="radio" name="2" />
+            <input id="second" type="radio" name="1" />
             <label for="second">Выбор2</label>
         </div>
         <div>
-            <textarea>
-                    Комментарий
-                </textarea>
+            <label for="comment">Comment</label>
+            <textarea name="comment" placeholder="Комментарий" id="comment"></textarea>
+
         </div>
         <div>
-            <input id="agree" type="checkbox" />
+            <input id="agree" type="checkbox" name="checkbox" required />
             <label for="agree">Я согласен на обработку персональных данных</label>
         </div>
         <div>
-            <input type="file" />
+            <label for="file">Файл</label>
+            <input type="file" id="file" />
         </div>
         <div>
-            <input type="submit" />
+            <button type="submit">Отправить</button>
         </div>
 
     </form>
