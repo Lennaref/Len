@@ -6,22 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Webpack Boilerplate</title>
+    <title>Кинотеатр Иннополис</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
 <body>
-    <div style="background: black">
-
+    <div style="background: #a9a9a9">
+        <a href="https://university.innopolis.ru/"><img src="images/logo.png" alt="Иннополис"></a>
         <nav>
             <ul>
-                <li><a href="https://university.innopolis.ru/"><img src="images/logo.png" alt="Иннополис"></a></li>
-                <li><a href="#">ЗАКАЗАТЬ БИЛЕТ</a></li>
-                <li><a href="#">ПРЕИМУЩЕСТВА</a></li>
-                <li><a href="#">ФИЛЬМЫ</a></li>
-                <li><a href="#">КОНТАКТЫ</a></li>
-                <li><span style="color:darkblue ">Ваш город: <u>Москва</u></span></li>
+                <li class="menu"><a href="#Билет">ЗАКАЗАТЬ БИЛЕТ</a></li>
+                <li class="menu"><a href="#Преимущества">ПРЕИМУЩЕСТВА</a></li>
+                <li class="menu"><a href="#Фильмы">ФИЛЬМЫ</a></li>
+                <li class="menu"><a href="#Контакты">КОНТАКТЫ</a></li>
+                <li class="menu"><span style="color:darkblue ">Ваш город: <u>Москва</u></span></li>
             </ul>
         </nav>
     </div>
@@ -29,10 +28,22 @@
         <img src="images/top_bg.jpg" alt="Первый кинотеатр в Иннополис" title="Первый кинотеатр в Иннополис">
     </div>
     <div>
-        <h1>Закажите билет в кино</h1>
+        <a id="Билет">
+            <h1>Закажите билет в кино</h1>
+        </a>
         <p>Всем покупателям подарок!</p>
     </div>
-
+    <ul>
+        <li>1
+            <ul>
+                <li>1.1</li>
+                <li>1.2</li>
+                <li>1.3</li>
+            </ul>
+        </li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
     <div>
         <h2>Добро пожаловать!</h2>
         <p>
@@ -44,7 +55,9 @@
             quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.
         </p>
     </div>
-    <h3>Почему мы?</h3>
+    <a id="Преимущества">
+        <h3>Почему мы?</h3>
+    </a>
     <div>
         <div>
             <img src="images/b2_icon_1.jpg" alt="Большие экраны">
@@ -55,7 +68,6 @@
                 vero voluptates.
             </p>
         </div>
-
         <div>
             <img src="images/b2_icon_2.jpg" alt="Объёмный звук">
             <h4>Объемный звук</h4>
@@ -73,11 +85,10 @@
             </p>
         </div>
     </div>
-
     <div>
         <h2>Выберите фильм</h2>
         <div>
-            <table border="2" ; cellpadding="2" ; cellspacing="2">
+            <table border="2" cellpadding="2" cellspacing="2">
                 <thead>
                     <tr>
                         <th>Начало сеанса</th>
@@ -85,41 +96,38 @@
                         <th>Жанр</th>
                     </tr>
                 </thead>
-                <tfoot></tfoot>
                 <tbody>
                     <tr>
-                        <td>10:00</td>
+                        <td rowspan="4">10:00 <br> 12:00 <br> 14:00 <br> 16:00
+                        </td>
                         <td>Человек-паук</td>
                         <td>фантастика, боевик, приключения</td>
                     </tr>
                     <tr>
-                        <td>12:00</td>
                         <td>Собачья жизнь 2 </td>
                         <td>фэнтези, драма, комедия</td>
                     </tr>
                     <tr>
-                        <td>14:00</td>
                         <td>История игрушек 4</td>
                         <td>мультфильм, фэнтези, комедия </td>
                     </tr>
                     <tr>
-                        <td>16:00</td>
-                        <td>Люди в черном: Интернэшнл </td>
-                        <td>фантастика, боевик, комедия </td>
+                        <td colspan="2">Люди в черном: Интернэшнл / фантастика, боевик, комедия</td>
                     </tr>
-
                 </tbody>
             </table>
         </div>
     </div>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus
-        veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui
-        quibusdam sunt!</div>
-
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus
+            veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui
+            quibusdam sunt!
+        </p>
+    </div>
     <div>
         <img src="images/b4_img.jpg" alt="Подарок каждому!">
     </div>
-
     <div>
         <div>
             <h3>Подарок каждому!</h3>
@@ -143,9 +151,10 @@
         </p>
         <a href="#" title="Получить подарок">Получить подарок</a>
     </div>
-
     <div>
-        <h4>Фильмы</h4>
+        <a id="Фильмы">
+            <h4>Фильмы</h4>
+        </a>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci
             alias, animi, commodi eius ipsum, laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse
@@ -173,7 +182,6 @@
                     </div>
                 </div>
             </div>
-
             <div>
                 <div>
                     <img src="images/mov2.jpg" alt="Собачья жизнь 2">
@@ -195,7 +203,6 @@
                     </div>
                 </div>
             </div>
-
             <div>
                 <div>
                     <img src="images/mov3.jpg" alt="Люди в черном: Интернэшнл">
@@ -203,7 +210,9 @@
                 <div>
                     <h5>Люди в черном: Интернэшнл</h5>
                     <hr />
-                    <div>Lorem ipsum dolor sit amet, consectetur</div>
+                    <a id="Контакты">
+                        <div>Lorem ipsum dolor sit amet, consectetur</div>
+                    </a>
                     <div>
                         <a href="http://twitter.com" title="twitter" target="_blank">
                             twitter
@@ -219,7 +228,6 @@
             </div>
         </div>
     </div>
-
     <footer>
         <div>
             <img width="1100" src="https://via.placeholder.com/1920x450?text=Map-1920x450" alt="Здесь будет карта"
@@ -241,25 +249,31 @@
             </a>
         </div>
     </footer>
-    <form style="width: 300px" action="order.php">
+    <button type="submit">Заказать</button>
+    <input type="submit" value="Заказать" />
+    <form style="width: 300px" action="order.php" method="GET">
         <div>
-            <label for="client's name">Имя</label>
-            <input type="text" name="client_name" id="client's name" placeholder="Имя*" required />
+            <label for="client_name">
+                <input type="text" name="client_name" id="client_name" placeholder="Имя*" required /></label>
         </div>
         <div>
-            <label for="val">Выбор</label>
-            <select id="val">
-                <option value="1">Выбор места 1</option>
-                <option value="2">Выбор места 2</option>
-                <option value="3">Выбор места 3</option>
-                <option value="4">Выбор места 4</option>
-                <option value="5">Выбор места 5</option>
-                <option value="6">Выбор места 6</option>
-                <option value="7">Выбор места 7</option>
-                <option value="8">Выбор места 8</option>
-                <option value="9">Выбор места 9</option>
-                <option value="10">Выбор места 10</option>
-            </select>
+            <input type="email" name="email" placeholder="Email" />
+        </div>
+        <div>
+            <label for="val">
+                <select id="val">
+                    <option value="1">Выбор места 1</option>
+                    <option value="2">Выбор места 2</option>
+                    <option value="3">Выбор места 3</option>
+                    <option value="4">Выбор места 4</option>
+                    <option value="5">Выбор места 5</option>
+                    <option value="6">Выбор места 6</option>
+                    <option value="7">Выбор места 7</option>
+                    <option value="8">Выбор места 8</option>
+                    <option value="9">Выбор места 9</option>
+                    <option value="10">Выбор места 10</option>
+                </select>
+            </label>
         </div>
         <div>
             <input id="first" type="radio" name="1" />
@@ -269,8 +283,9 @@
             <label for="second">Выбор2</label>
         </div>
         <div>
-            <label for="comment">Comment</label>
-            <textarea name="comment" placeholder="Комментарий" id="comment"></textarea>
+            <label for="comment">
+                <textarea name="comment" placeholder="Комментарий" id="comment"></textarea>
+            </label>
 
         </div>
         <div>
@@ -278,13 +293,14 @@
             <label for="agree">Я согласен на обработку персональных данных</label>
         </div>
         <div>
-            <label for="file">Файл</label>
-            <input type="file" id="file" />
+            <label for="file">
+                <input type="file" id="file" />
+            </label>
         </div>
         <div>
-            <button type="submit">Отправить</button>
+            <button type="submit">Заказать</button>
+            <input type="submit" value="Заказать" />
         </div>
-
     </form>
 </body>
 
