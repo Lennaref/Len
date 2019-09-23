@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Webpack Boilerplate</title>
+    <title>Кинотеатр Иннополис</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
 <body>
     <div style="background: black">
-
         <nav>
             <ul>
                 <li><a href="https://university.innopolis.ru/"><img src="images/logo.png" alt="Иннополис"></a></li>
@@ -32,7 +31,6 @@
         <h1>Закажите билет в кино</h1>
         <p>Всем покупателям подарок!</p>
     </div>
-
     <div>
         <h2>Добро пожаловать!</h2>
         <p>
@@ -55,7 +53,6 @@
                 vero voluptates.
             </p>
         </div>
-
         <div>
             <img src="images/b2_icon_2.jpg" alt="Объёмный звук">
             <h4>Объемный звук</h4>
@@ -73,53 +70,73 @@
             </p>
         </div>
     </div>
-
-    <div>
-        <h2>Выберите фильм</h2>
-        <div>
-            <table border="2" ; cellpadding="2" ; cellspacing="2">
+    <div class="movie-list">
+        <h2 class="movie-list__header">Выберите фильм</h2>
+        <div class="container">
+            <table class="movie-list__table">
                 <thead>
                     <tr>
-                        <th>Начало сеанса</th>
-                        <th>Название фильма</th>
-                        <th>Жанр</th>
+                        <th>Time</th>
+                        <th>Stuff that will hapen</th>
+                        <th></th>
                     </tr>
                 </thead>
-                <tfoot></tfoot>
                 <tbody>
+                    <style>
+                        tr:nth-child(odd) td {
+                            background: rgb(75, 77, 79)
+                        }
+                    </style>
                     <tr>
-                        <td>10:00</td>
-                        <td>Человек-паук</td>
-                        <td>фантастика, боевик, приключения</td>
+                        <td style>10am - 12pm</td>
+                        <td>Introduction and presentations about Envato</td>
+                        <td style="width:83px"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="33px" height="33px">
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                        d="M16.505,32.994 C7.393,32.994 0.005,25.607 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.607 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.777 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z" />
+                                </svg></a></td>
                     </tr>
                     <tr>
-                        <td>12:00</td>
-                        <td>Собачья жизнь 2 </td>
-                        <td>фэнтези, драма, комедия</td>
+                        <td>12pm-02pm</td>
+                        <td>Sessions by honorable guests and Speakers</td>
+                        <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="33px" height="33px">
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                        d="M16.505,32.994 C7.393,32.994 0.005,25.607 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.607 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.777 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z" />
+                                </svg></a></td>
                     </tr>
                     <tr>
-                        <td>14:00</td>
-                        <td>История игрушек 4</td>
-                        <td>мультфильм, фэнтези, комедия </td>
+                        <td>02pm-03pm</td>
+                        <td>Break and Mingle time with the authors</td>
+                        <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="33px" height="33px">
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                        d="M16.505,32.994 C7.393,32.994 0.005,25.607 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.607 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.777 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z" />
+                                </svg></a></td>
                     </tr>
                     <tr>
-                        <td>16:00</td>
-                        <td>Люди в черном: Интернэшнл </td>
-                        <td>фантастика, боевик, комедия </td>
+                        <td style="width: 296px">03pm-05pm</td>
+                        <td>Portfolio Review, Rewards and Ending Presentation</td>
+                        <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="33px" height="33px">
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                        d="M16.505,32.994 C7.393,32.994 0.005,25.607 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.607 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.777 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z" />
+                                </svg></a></td>
                     </tr>
-
                 </tbody>
             </table>
         </div>
     </div>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus
-        veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui
-        quibusdam sunt!</div>
-
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus
+            veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui
+            quibusdam sunt!
+        </p>
+    </div>
     <div>
         <img src="images/b4_img.jpg" alt="Подарок каждому!">
     </div>
-
     <div>
         <div>
             <h3>Подарок каждому!</h3>
@@ -143,7 +160,6 @@
         </p>
         <a href="#" title="Получить подарок">Получить подарок</a>
     </div>
-
     <div>
         <h4>Фильмы</h4>
         <p>
@@ -173,7 +189,6 @@
                     </div>
                 </div>
             </div>
-
             <div>
                 <div>
                     <img src="images/mov2.jpg" alt="Собачья жизнь 2">
@@ -195,7 +210,6 @@
                     </div>
                 </div>
             </div>
-
             <div>
                 <div>
                     <img src="images/mov3.jpg" alt="Люди в черном: Интернэшнл">
@@ -219,7 +233,6 @@
             </div>
         </div>
     </div>
-
     <footer>
         <div>
             <img width="1100" src="https://via.placeholder.com/1920x450?text=Map-1920x450" alt="Здесь будет карта"
@@ -241,10 +254,13 @@
             </a>
         </div>
     </footer>
-    <form style="width: 300px" action="order.php">
+    <form style="width: 300px" action="order.php" method="GET">
         <div>
-            <label for="client's name">Имя</label>
-            <input type="text" name="client_name" id="client's name" placeholder="Имя*" required />
+            <label for="client_name">
+                <input type="text" name="client_name" id="client_name" placeholder="Имя*" required /> </label>
+        </div>
+        <div>
+            <input type="email" name="email" placeholder="Email" />
         </div>
         <div>
             <label for="val">Выбор</label>
@@ -269,22 +285,22 @@
             <label for="second">Выбор2</label>
         </div>
         <div>
-            <label for="comment">Comment</label>
-            <textarea name="comment" placeholder="Комментарий" id="comment"></textarea>
-
+            <label for="comment">
+                <textarea name="comment" placeholder="Комментарий" id="comment"></textarea>
+            </label>
         </div>
         <div>
             <input id="agree" type="checkbox" name="checkbox" required />
             <label for="agree">Я согласен на обработку персональных данных</label>
         </div>
         <div>
-            <label for="file">Файл</label>
-            <input type="file" id="file" />
+            <label for="file">
+                <input type="file" id="file" />
+            </label>
         </div>
         <div>
-            <button type="submit">Отправить</button>
+            <button type="submit">Заказать</button>
         </div>
-
     </form>
 </body>
 
