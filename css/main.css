@@ -67,6 +67,7 @@ ul li {
     padding: 19px 0px;
     vertical-align: top;
 }
+
 .movie-list__table td {
     font-size: 22px;
     font-weight: 400;
@@ -74,4 +75,19 @@ ul li {
     background: #373737;
     padding: 18px 0;
     vertical-align: top;
+}
+
+.movie-list__col1 {
+    width: 230px;
+} 
+.movie-list__col3 {
+    width: 130px;
+}
+
+.movie-list__td3 {
+    padding: 10 40px;
+}
+
+.movie-list__td1 {
+    padding-left: 5px;
 }
